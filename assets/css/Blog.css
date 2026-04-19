@@ -1,0 +1,71 @@
+body {
+  background-color: #f4f4f4;
+  background: url('def.jpg') no-repeat center center fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-container {
+  width: 80%;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.blog-header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Hover and Animation Effects */
+.blog-post {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  transition: all ease-in-out 0.5s;
+
+}
+.blog-post:hover img {
+  width: 25%;
+}
+
+.blog-content h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.blog-content p {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.blog-post:hover .blog-content h3 {
+  color: #007BFF;
+}
+.blog-post:hover .blog-content p {
+  color: #444;
+}
+
+.meta {
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  gap:5px;
+}

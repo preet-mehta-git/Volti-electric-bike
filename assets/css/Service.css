@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.search-form {
+  background: white;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  max-width: 660px;
+}
+
+select, .buttons {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.buttons {
+  background-color: #008000;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  transition: background-color 0.3s;
+}
+
+.buttons:hover {
+  background-color: #006600;
+}
+
+.error-message {
+  display: none;
+  background-color: #F88379;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  filter: drop-shadow(0px 0px 12px gray);
+}
+
+.service {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: all ease-in-out 0.5s;
+}
+
+.service img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.service:hover {
+  width: 25%;
+}
+
+h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background: #343a40;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Devices (Phones) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 100%;
+  }
+
+  select, .buttons {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .service:hover {
+    width: 110%;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .service {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .service:hover {
+    width: 50%;
+  }
+
+  .search-form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  select, .buttons {
+    width: 48%;
+  }
+}
+
+.textt{
+  color: none;
+}
+
+.textt:hover{
+  color: yellow;
+}

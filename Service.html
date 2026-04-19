@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tag for Responsiveness -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Discover the power of Volti electric bikes.">
+    <meta name="keywords" content="Volti electric bike">
+    <meta name="author" content="Volti Bikes">
+
+    <title>Volti Electric Bike Services</title>
+    <!-- Css Files.. -->
+    <link rel="stylesheet" href="./assets/css/Service.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+  </head>
+  <body id="top">
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/Screenshot__28_-removebg-preview.png"
+            width="180" height="50" alt="volti home">
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item"><a href="index.html"
+                class="navbar-link"><ion-icon
+                  name="home-outline"></ion-icon>Home</a></li>
+            <li class="navbar-item"><a href="Service.html"
+                class="navbar-link"><ion-icon
+                  name="construct-outline"></ion-icon>Services</a></li>
+            <li class="navbar-item"><a href="Gallery.html"
+                class="navbar-link"><ion-icon
+                  name="images-outline"></ion-icon>Gallery</a></li>
+            
+            <li class="navbar-item"><a href="Blogs.html"
+                class="navbar-link"><ion-icon
+                  name="newspaper-outline"></ion-icon>Blog</a></li>
+            <li class="navbar-item"><a href="Contact Us.html"
+                class="navbar-link"><ion-icon
+                  name="people-circle-outline"></ion-icon>Contact Us</a></li>
+          </ul>
+        </nav>
+
+        
+
+        <button class="nav-toggle-btn" aria-label="toggle menu"
+          data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"
+            class="open"></ion-icon>
+          <ion-icon name="close-outline" aria-hidden="true"
+            class="close"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <br>
+    <div class="container">
+      <br><br><br>
+      <h1>Volti Electric Bike Services</h1>
+      <div class="search-form">
+        <select id="city" onchange="updateDistricts()">
+          <option value selected hidden blocked>Select City</option>
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Surat">Surat</option>
+          <option value="Bhavnagar">Bhavnagar</option>
+        </select>
+        <select id="district">
+          <option value selected hidden blocked>Select Area</option>
+        </select>
+        <select id="service-type">
+          <option value selected hidden blocked>Select Service Type</option>
+          <option value="Battery Replacement">Battery Replacement</option>
+          <option value="Motor Repair">Motor Repair</option>
+          <option value="General Maintenance">General Maintenance</option>
+          <option value="Charging Station">Charging Station</option>
+          <option value="Brake Inspection & Repair">Brake Inspection &
+            Repair</option>
+          <option value="Tire Replacement & Puncture Repair">Tire Replacement &
+            Puncture Repair</option>
+          <option value="Firmware & Software Update">Firmware & Software
+            Update</option>
+          <option value="Frame & Suspension Check">Frame & Suspension
+            Check</option>
+        </select>
+        <button class="buttons" onclick="searchServices()">Search</button>
+      </div>
+
+      <div class="error-message" id="error-message">Please select all
+        fields.</div>
+
+      <div class="services" id="services-list">
+        <div class="service" data-service="Battery Replacement">
+          <img src="./assets/images/istockphoto-1336148367-612x612.jpg"
+            alt="Battery Replacement">
+          <h3 class="textt">Battery Replacement</h3>
+          <p>Get a new battery installed for your electric bike.</p>
+        </div>
+
+        <div class="service" data-service="Motor Repair">
+          <img src="./assets/images/motor.jpg" alt="Motor Repair">
+          <h3>Motor Repair</h3>
+          <p>Expert repair services for your bike's motor.</p>
+        </div>
+
+        <div class="service" data-service="General Maintenance">
+          <img
+            src="./assets/images/bike-europe-velogix-expands-service-solutions.avif"
+            alt="General Maintenance">
+          <h3>General Maintenance</h3>
+          <p>Routine check-ups and servicing for optimal performance.</p>
+        </div>
+
+        <div class="service" data-service="Charging Station">
+          <img src="./assets/images/IDTechEx-EV-Trends.jpg"
+            alt="Charging Station">
+          <h3>Charging Station</h3>
+          <p>Find authorized charging stations near you.</p>
+        </div>
+
+        <div class="service" data-service="Brake Inspection & Repair">
+          <img src="./assets/images/Brake Inspection & Repair.jpg"
+            alt="Brake Inspection & Repair">
+          <h3>Brake Inspection & Repair</h3>
+          <p>Ensure your e-bike’s braking system is in top condition for
+            safety.</p>
+        </div>
+
+        <div class="service" data-service="Tire Replacement & Puncture Repair">
+          <img src="./assets/images/Tire Replacement & Puncture Repair.jpg"
+            alt="Tire Replacement & Puncture Repair">
+          <h3>Tire Replacement & Puncture Repair</h3>
+          <p>Get new tires installed or fix punctures for a smooth ride.</p>
+        </div>
+
+        <div class="service" data-service="Firmware & Software Update">
+          <img src="./assets/images/Firmware & Software Update.jpg"
+            alt="Firmware & Software Update">
+          <h3>Firmware & Software Update</h3>
+          <p>Keep your e-bike’s system updated for better performance and
+            security.</p>
+        </div>
+
+        <div class="service" data-service="Frame & Suspension Check">
+          <img src="./assets/images/Frame & Suspension Check.jpg"
+            alt="Frame & Suspension Check">
+          <h3>Frame & Suspension Check</h3>
+          <p>Inspect and maintain your bike's frame and suspension for
+            durability and comfort.</p>
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+    <footer class="footer">
+      <div class="container">
+
+        <div class="footer-bottom">
+
+          <div>
+            <ul class="footer-bottom-list">
+
+              <li>
+                <a href="#" class="footer-bottom-link">Where to
+                  Find Us</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-bottom-link">Terms of
+                  Payment</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-bottom-link">Stats
+                  Element</a>
+              </li>
+            </ul>
+          </div>
+
+          <a href="index.html" class="logo">
+            <img
+              src="./assets/images/Screenshot__28_-removebg-preview.png"
+              width="180" height="50"
+              loading="lazy" alt="Volti home">
+          </a>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61566902733844" class="social-link" target="_blank">
+                <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://x.com/Preet_Mehta_0" class="social-link" target="_blank">
+                <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/preet-mehta-git" class="social-link" target="_blank">
+                <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/preetm/" class="social-link" target="_blank">
+                <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Back To Top -->
+    <a href="#top" class="back-top-btn" aria-label="go to top"
+      data-go-top-btn>
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/Service.js"></script>
+  </body>
+</html>

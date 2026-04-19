@@ -1,0 +1,86 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    perspective: 1000px; /*used to give a 3D-positioned element some perspective*/
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.front {
+    background: #f2f2f2;
+}
+
+.back {
+    background: #343a40;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.profile-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.contact-number {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.span {
+    font-size: 20px;
+}
+
+/* footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+} */
